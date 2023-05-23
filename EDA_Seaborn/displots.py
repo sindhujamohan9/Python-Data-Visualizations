@@ -36,3 +36,11 @@ sns.displot(housing_df, x='price', hue='bedrooms', palette='colorblind', element
 # kde plot
 
 sns.displot(housing_df, x='price', kind='kde',hue='bedrooms', palette='colorblind')
+
+# two-dimensional histogram/kde plots
+
+sns.displot(housing_df, x='price', y='lotsize') # Can also be seen as a heatmap
+
+sns.displot(housing_df, x='price', y='lotsize', cbar=True)
+
+sns.displot(housing_df, x='price', y='lotsize',kind='kde') 
