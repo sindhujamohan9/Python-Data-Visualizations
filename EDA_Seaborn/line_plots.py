@@ -26,3 +26,11 @@ sns.relplot(salaries_df, x='yrs.service', y='salary', kind='line', aspect=2, ci=
 sns.relplot(salaries_df, x='yrs.service', y='salary', kind='line', aspect=2, ci=False, hue='discipline') 
 
 sns.relplot(salaries_df, x='yrs.service', y='salary', kind='line', aspect=2, ci=False, col='sex', hue='discipline') 
+
+## line plots for categories
+
+sns.catplot(data=housing_df, x='bedrooms', y='price', kind='point', ci=False)
+
+sns.catplot(data=housing_df, x='bedrooms', y='price', kind='point')
+
+sns.catplot(data=housing_df, x='bedrooms', y='price', kind='point', ci=False, hue='driveway')
