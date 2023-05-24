@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from pydataset import data 
 
+housing = data('Housing')
 housing_df.head()
 
 sns.catplot(housing_df, x='bedrooms', y='price', kind='box')
