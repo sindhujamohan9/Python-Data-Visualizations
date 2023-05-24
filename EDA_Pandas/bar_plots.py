@@ -4,6 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from pydataset import data
 
+housing = data('Housing')
+
 # Bar plot for number of bed rooms
 bedroom_counts = housing.groupby('bedrooms')['bedrooms'].count()
 
