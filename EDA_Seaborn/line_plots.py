@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 from pydataset import data 
 
+housing = data('Housing')
 housing_df.head()
 
 nile_df = data('Nile')
-
 nile_df.head()
 
 sns.relplot(nile_df, x='time', y='Nile', kind='line')
